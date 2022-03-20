@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$lemon-mart-primary: mat-palette($mat-green, 800);
+$lemon-mart-accent: mat-palette($mat-lime, A400);
+$lemon-mart-warn: mat-palette($mat-red);
+
+$custom-theme: mat-light-theme(
+    $lemon-mart-primary,
+    $lemon-mart-accent,
+    $lemon-mart-warn,
+);
+
+@include angular-material-theme($custom-theme);
